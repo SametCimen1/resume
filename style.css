@@ -1,0 +1,556 @@
+
+
+*{
+    padding:0;
+    margin: 0;
+}
+.introContainer{
+    width: 100%;
+    height: 100vh;
+}
+
+.intro{
+
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.switchTheme{
+    width: 100%;
+    position: absolute;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.introText{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    margin-right: 1rem;
+
+
+}
+.introTextContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.name{
+    text-align: center;
+    width: 50%;
+
+
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+.links{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+.link:visited{
+    color:black;
+}
+.linkContainer{
+    padding:10px 5px;
+}
+.linkContainer:hover{
+    transition-duration: 400ms;
+    transform: translate(0, -10px);
+}
+.myLink{
+    color:black;
+}
+
+
+i{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.myImg{
+    margin-left: 1rem;
+    width: 50%;
+
+}
+.myImg img{
+    max-width: 500px;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.aboutMe h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.name h1{
+    display: inline;
+}
+.programmingLanguages{
+  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgContainer{
+  margin: auto;
+  margin-top: 2rem;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imgs{
+    margin: 0 2rem;
+}
+.imgs img{
+    width: 80px;
+    height: 75px;
+
+}
+.security, .projects, .aboutMe, .programmingLanguages{
+    min-height: 25vh;   
+    margin-top: 6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.security{
+
+}
+.securityContainer{
+
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.securityImageContainer{
+    width: 45%;
+}
+.securityImageContainer img{
+    width: 100%;
+    height: 500px;
+}
+
+.securityText{
+    width: 45%;
+}
+
+.securityText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
+
+@media screen and (max-width:1448px) {
+    .securityImageContainer img{
+        width: 100%;
+        height: auto
+    }
+    .securityContainer{
+        align-items: center;
+    }
+}
+@media screen and (max-width:1000px) {
+    .securityImageContainer{
+        flex-direction: column;
+        display: none;
+    }
+    .securityText{
+        width: 90%;
+    }
+    .programmingLanguages,.security, .projects, .aboutMe{
+        padding: 0px;
+    }
+}
+
+
+.languageContainer{
+    padding-top:50px 0; 
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.projects{
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 10px;
+
+}
+
+.cardsContainer{
+    width:100vw;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.card{
+    margin-top: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    transition-duration: 300ms;
+    box-shadow: 1px 1px 8px #D3D3D3,-1px -1px 8px #D3D3D3,-1px 1px 8px #D3D3D3,1px -1px 8px #D3D3D3;
+    max-width: 400px;
+    width: 30%;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card a{
+    text-decoration: none;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 15px #D3D3D3,-1px -1px 15px #D3D3D3,-1px 1px 15px #D3D3D3,1px -1px 15px #D3D3D3;
+}
+
+
+.cardImg{
+    margin-top: 5px;
+    width: 100%;
+
+}
+.cardImg img{
+    
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    
+    border-radius: 10%;
+
+}
+
+.cardTextContainer{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.cardTextContainer:last-of-type{
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color:black;
+    font-family: 'Nunito', sans-serif;
+    margin: 1rem 0;
+}
+
+.madeWith{
+    font-weight: 400;
+    color:#718096;
+}
+
+
+.whatIs,.interested{
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.whatIsHeader{
+    font-size: 1.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.whatIsContainer{
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+}
+.imageContainer{
+    width: 50%;
+}
+.whatIsTextContainer{
+    width: 50%;
+    height: 100%;
+
+}
+.imageContainer img{
+    width: 65%;
+    border-radius: 5px;
+    min-width: 100px;
+    max-width: 1000px;
+}
+
+.whatIsText{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+}
+.interested{
+    margin-top: 3rem;
+    background-color: white;
+}
+.interestedContainer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.svgContainer,.whatIsTextContainer{
+    width:50%;
+}
+
+#leg{
+    animation: leg 2s ease infinite;
+    transform-origin: center;
+}
+
+@keyframes leg {
+    0%{
+       transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(8deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+.doingContainer{
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 5rem;
+    background-color: #F7FAFC;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+}
+.doings{
+    width: 80%;
+    margin: auto;
+}
+.doingHeader{
+    font-size: 1.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.joinHeader{
+    font-size: 1.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.doingParagraph{
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+.joinContainer{
+    width: 80%;
+    min-height: 10vh;
+    margin: 2rem auto;
+    text-align: center;
+}
+.joinParagraph{
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+.formButton{
+    background-color: #8685EF;
+    color:white;
+    border:0;
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+    .whatIsContainer{
+        flex-direction: column-reverse;
+    }
+    .imageContainer img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .whatIsTextContainer{
+        width: 100%;
+    }
+    .imageContainer{
+        width: 70%;
+    }
+    .supportText{
+        margin: 0 1rem;
+    }
+    .interestedContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .svgContainer{
+        margin-bottom: 5rem;
+ 
+        width: 100%;
+    }
+    .whatIsText{
+        margin: 1rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .header{
+        justify-content: center;
+    }
+    .listItem{
+        margin: 0.9rem;
+        font-size: 1.2rem;
+    }
+    .listItem a{
+        margin: 0.9rem;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:420px) {
+    .header{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .headerList{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imageContainer{
+        display: none;
+    }
+    .svgContainer{
+        display: none;
+    }
+}
+
+
+.aboutMe{
+    width: 80vw;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+@media screen and (max-width:1000px) {
+    .myImg{
+        display: none;
+    }
+    .introText{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .introText h1{
+        font-size: 2rem;
+    }
+    .lightHeader{
+        margin: 0 0.5rem;
+        font-size: 2rem;
+    }
+    .languageContainer{
+        margin-top: 0rem;
+    }
+    .cardsContainer{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .imgContainer{
+        flex-direction: column;
+    }
+    .card{
+        width: 75%;
+    }
+
+}
+.bolder{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
